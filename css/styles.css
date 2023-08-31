@@ -245,9 +245,6 @@ ol {
   flex-shrink: 0;
 }
 
-.portfolio-card .card-content {
-}
-
 .portfolio-header {
   color: var(--NAVY-BLUE, #2e2f42);
   font-family: Roboto;
