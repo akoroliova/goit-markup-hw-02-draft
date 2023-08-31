@@ -1,7 +1,51 @@
-h1 {
-  color: orange;
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: var(--navyblue, #2e2f42);
+  background-color: var(--white, #fff);
 }
 
-p {
-  color: rgb(5, 66, 66);
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.header-menu {
+  display: flex;
+  width: 1440px;
+  height: 72px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--white, #fff);
+}
+
+.logo {
+  display: inline-flex;
+  height: 24px;
+  align-items: center;
+  flex-shrink: 0;
+  color: var(--navyblue, #2e2f42);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px; /* 116.667% */
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+.logo .accent {
+  color: var(--iris, #4d5ae5);
+}
+
+.portfolio-list {
+  width: 360px;
+  height: 300px;
+  flex-shrink: 0;
+  background: url(<path-to-image>), lightgray -1px 0px / 101.111% 100% no-repeat;
 }
