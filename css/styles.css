@@ -2,6 +2,8 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--navyblue, #2e2f42);
   background-color: var(--white, #fff);
+  width: 1440px;
+  height: 3300px;
 }
 
 a {
@@ -13,39 +15,298 @@ ol {
   list-style-type: none;
 }
 
-.header-menu {
+/*TODO::remove repeating inherited values*/
+
+.top-line {
   display: flex;
   width: 1440px;
   height: 72px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  border-bottom: 1px solid var(--cornflower, #e7e9fc);
-  background: var(--white, #fff);
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+  background: var(--WHITE, #fff);
 }
 
-.logo {
+.header-logo {
   display: inline-flex;
+  width: 71px;
   height: 24px;
   align-items: center;
   flex-shrink: 0;
-  color: var(--navyblue, #2e2f42);
+  color: var(--NAVY-BLUE, #2e2f42);
   font-family: Raleway;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 21px; /* 116.667% */
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
 
-.logo .accent {
-  color: var(--iris, #4d5ae5);
+.header-logo-accent {
+  color: var(--IRIS, #4d5ae5);
+  width: 44px;
+}
+
+.menu-nav {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.menu-links {
+  color: var(--NAVY-BLUE, #2e2f42);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.contact-info {
+  color: var(--SLATE, #434455);
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.hero {
+  width: 1440px;
+  height: 600px;
+  flex-shrink: 0;
+  background: var(--NAVY-BLUE, #2e2f42);
+}
+
+.hero-header {
+  width: 496px;
+  color: var(--WHITE, #fff);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 60px; /* 107.143% */
+  letter-spacing: 1.12px;
+}
+
+.hero-button {
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--IRIS, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--WHITE, #fff);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+.section-1 {
+  width: 1128px;
+  height: 104px;
+  flex-shrink: 0;
+}
+.features {
+  display: flex;
+  width: 264px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.features-header {
+  width: 264px;
+  color: var(--NAVY-BLUE, #2e2f42);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.4px;
+}
+
+.features-paragraph {
+  width: 264px;
+  color: var(--SLATE, #434455);
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.section-2 {
+  width: 1440px;
+  height: 732px;
+  flex-shrink: 0;
+  background: var(--CLOUD, #f4f4fd);
+}
+
+.section-2-header {
+  color: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.section-2-card {
+  display: inline-flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--WHITE, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.section-2-card .card-content {
+  display: flex;
+  width: 232px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.teammate-photo {
+  width: 264px;
+  height: 260px;
+}
+
+/*может все h3 просто сделать одним єлементом class='h3'?*/
+.section-2-card .card-header {
+  color: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.4px;
+}
+
+.section-2-card .card-paragraph {
+  color: var(--SLATE, #434455);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.section-3 {
+  width: 1128px;
+  height: 1000px;
+  flex-shrink: 0;
+}
+
+.section-3-header {
+  color: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
 }
 
 .portfolio-list {
+  width: 1128px;
+  height: 420px;
+  flex-shrink: 0;
+}
+
+.portfolio-card {
+  display: flex;
+  width: 360px;
+  height: 420px;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+  background: var(--WHITE, #fff);
+}
+
+.portfolio-pic {
   width: 360px;
   height: 300px;
   flex-shrink: 0;
-  background: url(<path-to-image>), lightgray -1px 0px / 101.111% 100% no-repeat;
+}
+
+.portfolio-card .card-content {
+}
+
+.portfolio-header {
+  color: var(--NAVY-BLUE, #2e2f42);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.4px;
+}
+
+.portfolio-paragraph {
+  color: var(--SLATE, #434455);
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.footer {
+  width: 1440px;
+  height: 312px;
+  flex-shrink: 0;
+  background: var(--NAVY-BLUE, #2e2f42);
+}
+
+.footer-text {
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+}
+
+.footer-logo {
+  align-items: center;
+  flex-shrink: 0;
+  display: flex;
+  width: 71px;
+  height: 21px;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--CLOUD, #f4f4fd);
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px; /* 116.667% */
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+.footer-logo-accent {
+  color: var(--iris, #4d5ae5);
+  width: 44px;
+}
+
+.footer-pragraph {
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+  color: var(--CLOUD, #f4f4fd);
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
 }
